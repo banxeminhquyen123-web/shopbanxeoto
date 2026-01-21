@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html class="dark" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Chi Tiết Xe | AUTOLUXURY</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#EAB308",
+              "background-light": "#F8F9FA",
+              "background-dark": "#0A0A0A",
+              "card-dark": "#161616",
+            },
+            fontFamily: {
+              display: ["Playfair Display", "serif"],
+              sans: ["Outfit", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              'xl': '1rem',
+            },
+          },
+        },
+      };
+    </script>
+<style type="text/tailwindcss">
+        body { font-family: 'Outfit', sans-serif; }
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(10,10,10,0) 0%, rgba(10,10,10,0.8) 70%, rgba(10,10,10,1) 100%);
+        }
+        .text-gold-gradient {
+            background: linear-gradient(135deg, #EAB308 0%, #FDE047 50%, #B45309 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 transition-colors duration-300">
+<nav class="fixed top-0 w-full z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-white/5">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-2 group cursor-pointer">
+	<img src="image.png" width="75" height="65">
+<span class="material-symbols-outlined text-primary text-3xl">directions_car</span>
+<span class="text-2xl font-bold tracking-tighter uppercase dark:text-white">QUYENMINH</span>
+</div>
+<div class="hidden md:flex items-center gap-10 text-sm font-medium tracking-wide">
+<a class="hover:text-primary transition-colors" href="index.html">TRANG CHỦ</a>
+<span style="color: #F0FF29"><a class="hover:text-primary transition-colors" href="gioithieu.html">GIỚI THIỆU</a></span>
+<a href="sanoham.html" class="text-primary transition-colors" style="color: #FFFFFF">SẢN PHẨM</a>
+<a class="hover:text-primary transition-colors" href="lienhe1.html">LIÊN HỆ</a>
+<a class="hover:text-primary transition-colors" href="dichvu.html">DỊCH VỤ</a>
+</div>
+<div class="flex items-center gap-6">
+<a href="dangnhap1.html"><button class="text-sm font-medium hover:text-primary transition-colors">Đăng nhập</button></a>
+<a href="dangky.html"
+   class="bg-primary hover:bg-yellow-500 text-black px-6 py-2.5 rounded text-sm font-bold transition-all shadow-lg shadow-primary/20 inline-block">
+   Đăng ký
+</a>
+
+<div class="relative cursor-pointer">
+<span class="material-symbols-outlined text-2xl">shopping_cart</span>
+<span class="absolute -top-2 -right-2 bg-primary text-black text-[10px] font-bold h-4 w-4 rounded-full flex items-center justify-center">1</span>
+</div>
+</div>
+</div>
+</nav>
+<header class="relative min-h-[85vh] flex items-end overflow-hidden bg-background-dark">
+<div class="absolute inset-0 z-0">
+<img alt="Rolls-Royce Phantom Hero" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_sqp4k8q3cVooXeMhy6QeUeh6HAa3kBpQb5205ABWPeoLnmuKhmh0pR9kK2G9SHZ4vRBD8lXS4xvDxDuTsgdyE-IzQe1wWxIeecHpdXK97D27xg6f79jggfeII4E64FEMeB0TZiXPwjUkBe3_9_ccRkYi8055z_5IkfwMmTO2RH3AX8FUKuYHim5U82In7Tz5YPOtrKIdktdKGKlH8n7q6_prIXs8Q7nSjH3ONdbJY1OhPTQaZ_UWPigQGGvYR5V7RQZurZ7O_g"/>
+<div class="hero-gradient absolute inset-0"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-6 w-full pb-20">
+<div class="max-w-4xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 border border-primary/40 bg-primary/10 rounded-full mb-6">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span class="text-[10px] uppercase font-bold tracking-[0.2em] text-primary">Kiệt tác độc bản</span>
+</div>
+<h1 class="text-6xl md:text-8xl font-bold leading-tight mb-4 dark:text-white font-display italic">
+                Rolls-Royce Phantom
+            </h1>
+<div class="flex items-center gap-6">
+<span class="text-3xl md:text-4xl font-bold text-primary">$450,000</span>
+<div class="h-8 w-[1px] bg-white/20"></div>
+<span class="text-slate-400 uppercase tracking-widest text-sm">Hiện có sẵn tại Showroom</span>
+</div>
+</div>
+</div>
+</header>
+<main class="relative z-10 -mt-10">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+<div class="lg:col-span-2 space-y-20 pb-20">
+<section id="thong-so">
+<div class="flex items-center gap-3 mb-10">
+<div class="w-1.5 h-10 bg-primary"></div>
+<h2 class="text-3xl font-bold dark:text-white">Thông số kỹ thuật</h2>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<div class="bg-card-dark p-6 rounded-2xl border border-white/5 flex flex-col items-center text-center group hover:border-primary/30 transition-all">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">settings_input_component</span>
+<span class="text-slate-400 text-xs uppercase font-bold tracking-tighter">Động cơ</span>
+<span class="text-white text-xl font-bold mt-1">6.75L V12</span>
+</div>
+<div class="bg-card-dark p-6 rounded-2xl border border-white/5 flex flex-col items-center text-center group hover:border-primary/30 transition-all">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">bolt</span>
+<span class="text-slate-400 text-xs uppercase font-bold tracking-tighter">Công suất</span>
+<span class="text-white text-xl font-bold mt-1">563 HP</span>
+</div>
+<div class="bg-card-dark p-6 rounded-2xl border border-white/5 flex flex-col items-center text-center group hover:border-primary/30 transition-all">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">speed</span>
+<span class="text-slate-400 text-xs uppercase font-bold tracking-tighter">0-100 km/h</span>
+<span class="text-white text-xl font-bold mt-1">5.3 Giây</span>
+</div>
+<div class="bg-card-dark p-6 rounded-2xl border border-white/5 flex flex-col items-center text-center group hover:border-primary/30 transition-all">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">electric_car</span>
+<span class="text-slate-400 text-xs uppercase font-bold tracking-tighter">Tốc độ tối đa</span>
+<span class="text-white text-xl font-bold mt-1">250 km/h</span>
+</div>
+</div>
+</section>
+<section id="gioi-thieu">
+<div class="flex items-center gap-3 mb-10">
+<div class="w-1.5 h-10 bg-primary"></div>
+<h2 class="text-3xl font-bold dark:text-white">Giới thiệu chi tiết</h2>
+</div>
+<div class="prose prose-invert max-w-none text-slate-400 leading-relaxed text-lg">
+<p class="mb-6">
+                            Rolls-Royce Phantom không chỉ là một chiếc xe hơi; nó là biểu tượng tối thượng của sự sang trọng và thành công. Mỗi chiếc Phantom được chế tác thủ công tại Goodwood, Anh Quốc, là một kiệt tác riêng biệt phản ánh cá tính của chủ sở hữu.
+                        </p>
+<p class="mb-6">
+                            Với hệ thống treo khí nén "Magic Carpet Ride", Phantom mang lại trải nghiệm êm ái tuyệt đối, như thể bạn đang lướt đi trên một đám mây. Nội thất được bao phủ bởi những loại da cao cấp nhất và gỗ quý hiếm, kết hợp cùng trần xe "Starlight Headliner" mô phỏng bầu trời sao lộng lẫy.
+                        </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+<div class="border-l-2 border-primary pl-6">
+<h4 class="text-white font-bold mb-2">Thủ công tinh xảo</h4>
+<p class="text-sm">Hơn 60 đôi tay nghệ nhân tham gia vào quá trình sản xuất kéo dài hàng trăm giờ cho mỗi chi tiết nhỏ nhất.</p>
+</div>
+<div class="border-l-2 border-primary pl-6">
+<h4 class="text-white font-bold mb-2">Cách âm hoàn hảo</h4>
+<p class="text-sm">Hơn 130kg vật liệu cách âm giúp khoang cabin trở thành không gian yên tĩnh nhất thế giới.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="thu-te">
+<div class="flex items-center gap-3 mb-10">
+<div class="w-1.5 h-10 bg-primary"></div>
+<h2 class="text-3xl font-bold dark:text-white">Ảnh thực tế</h2>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+<div class="aspect-square rounded-xl overflow-hidden group cursor-pointer">
+<img alt="Interior 1" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQi0sxZWe3Ca0VsQ70ddKMjWNdxmSqS1B1I8JHBQjJ-ZfHXZEg-JrasyLuYabQvlwjBhekYxuEBUARLFJrjdVn_0MIQC4PRJfJ3siBGB2mZg19tX2E2t2SJ7mQE7mp39ISfeJ-zF8I62xWad4h01XG88klmkpue3y_KtLyU4Wfma3-GHXh3G7k7irRNv1hafg-0FJKh4i1nTBy5y34MKPNbJPmT3HUZzCz8BZpsdcYgIlG5IHTaI_LLV6tcdSJ7Vgh98Epwmms0w"/>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden group cursor-pointer">
+<img alt="Detail 1" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLpMX-ubOghtG-60MsVyfU_1t44niycTlaUrkUgNSzHIBXpAchOcVYEmEx36vEGIoPZWkMs0yrZbmrdMv2Xp3-8tEIVZ4pEibX0QxtnVBaz4pyRC1L5LYRKskID4dRJvMXHzypv-lRdHlMNB80Q_ju-9beOtNaoN7sLXuOvIxCovvlZgncPEDpJmpCCm3q4HM_kWzIfGW3dwa1R3-ENbLm9kp1cClvApyA-2nFYeUDTHwWZrK1TTomhZ2XXOudpd9HtxTA3DZefg"/>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden group cursor-pointer">
+<img alt="Wheel detail" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB11BxxpXDwAeO-JDwmRqg5GH3e0b2bPVH1a0_GNxUtaLq10TVRpNgdpZH7EvDeauAihgGkR2hN43fsPdpuzIMxUUsRjATVb-VySK-m95lFmHLJrm7nVQMTQ7xWfoJtJwywIowmIiwtvaOuksM2Z6iESNujvE4Y6H3NdT6YlD8jb6hPd6KJyospWDZ8fWPx6Z-muSkQeZdwEUpMV0_Km26r3z76K916nH-oS_HFfNbx9HSgY6p5bFgNgN3qAIr_IlqKTBqIGbA7GQ"/>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden group cursor-pointer">
+<img alt="Dashboard" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtz2WaibnTihnXyq2pSgjMXV30Es8lrx8hTJ2By1a0IzWAWp4UVjmH1o35lBA97JzZIy1IZezIU9niGpIULVPLCDxJEl_83eGohBNTKU_cpexfyD9roLQhduGsItkjuW5DybmWKX2t5ZTJJpkmheRoNAYnYcQ4j8NP07rGBK1JYwPBNlmm1qzGnTG-gfJZkK15FTan2vxS3P-yu9tEgnCy7Jc71emTdaF01Gh1IixImycMsYAJBRHs5rhURj5XYLMLgWxp_yaZ9Q"/>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden group cursor-pointer">
+<img alt="Rear seat" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhHfv7DdxXneiM22NbYLDzcccF4iiZG13dGtiC56oBujvIfliUO33a40AIO35N5UA_IypzEfW-RtcuwK3Te7A4Oz3cu58pU6Qnqnd9eMSc9nM3VyzlqglqfcAanco8jYgl9bn2StyZ3iDVFl9NqBp6dMVce0bDkCO_IQoE0RymB1Ih7pLiJBVgDi7WJ8AlSGt85j32SV92HN4kExj-ODjc63CTvxda_0GasTFGuh0vt4-dp4HfFSIPw_HNoUL5z770rWTlPu-peg"/>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden group cursor-pointer relative">
+<img alt="More photos" class="w-full h-full object-cover blur-[2px]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDChv2LxDtrUPaKSpjErbscaPBTS1S6LRPcjIG4njIjCRqQBWcFzoTM0UUZQM4pf2rO6c0qFQFqfVemlihlnEbIoFV-TpDikvelGWay_MI6ppEsPrSMnnFrcy2VgRX6Nwgu1m6R3JUAPcVqirckuzb8eDMrteMPH0ZsOTE2pNQHg7nbNYpp4KvW7N8YjtyIcWjZXD9ShlqN3rGH8HFsOF1s1FiSM4Zs7sOZaYNNomy2ZYPgwI5uwzJ1_lLT7yUwPuy8VLGZQxDs-g"/>
+<div class="absolute inset-0 bg-black/50 flex items-center justify-center">
+<span class="text-white font-bold">+12 Ảnh khác</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<aside class="lg:col-span-1">
+<div class="sticky top-28 space-y-8">
+<div class="bg-card-dark border border-white/5 rounded-2xl p-8">
+<h3 class="text-xl font-bold text-white mb-6">Liên hệ đặt mua</h3>
+<div class="space-y-4">
+<button class="w-full bg-primary hover:bg-yellow-500 text-black py-4 rounded-xl font-bold transition-all shadow-xl shadow-primary/10 flex items-center justify-center gap-3">
+<span class="material-symbols-outlined">shopping_cart</span>
+                                Thêm vào giỏ
+                            </button>
+<button class="w-full bg-white/5 hover:bg-white/10 text-white py-4 rounded-xl font-bold transition-all border border-white/10 flex items-center justify-center gap-3">
+<span class="material-symbols-outlined">event</span>
+                                Đặt lịch lái thử
+                            </button>
+</div>
+<div class="mt-8 pt-8 border-t border-white/5 space-y-4">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-xl">verified_user</span>
+</div>
+<div>
+<p class="text-white text-sm font-bold">Bảo hành 5 năm</p>
+<p class="text-slate-500 text-xs">Chính sách bảo hành toàn cầu</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-xl">support_agent</span>
+</div>
+<div>
+<p class="text-white text-sm font-bold">Hỗ trợ 24/7</p>
+<p class="text-slate-500 text-xs">Đội ngũ chuyên gia cao cấp</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-card-dark border border-white/5 rounded-2xl p-8">
+<h3 class="text-xl font-bold text-white mb-4">Chia sẻ</h3>
+<div class="flex gap-4">
+<button class="w-10 h-10 rounded-full bg-white/5 hover:bg-white/10 flex items-center justify-center text-white transition-all">
+<svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg>
+</button>
+<button class="w-10 h-10 rounded-full bg-white/5 hover:bg-white/10 flex items-center justify-center text-white transition-all">
+<svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.84 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"></path></svg>
+</button>
+<button class="w-10 h-10 rounded-full bg-white/5 hover:bg-white/10 flex items-center justify-center text-white transition-all">
+<span class="material-symbols-outlined text-lg">link</span>
+</button>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</main>
+<section class="py-24 px-6 max-w-7xl mx-auto border-t border-white/5">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div>
+<div class="flex items-center gap-3 mb-4">
+<div class="w-1 h-8 bg-primary"></div>
+<span class="text-primary uppercase tracking-[0.3em] font-bold text-xs">Tham khảo thêm</span>
+</div>
+<h2 class="text-4xl md:text-5xl font-bold dark:text-white">Bộ Sưu Tập Độc Quyền</h2>
+</div>
+<a class="text-primary font-bold hover:underline" href="#">Xem tất cả sản phẩm →</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="group bg-card-dark rounded-xl overflow-hidden border border-white/5 hover:border-primary/50 transition-all flex flex-col">
+<div class="relative aspect-[16/10] overflow-hidden">
+<img alt="Bentley" class="w-full h-full object-cover group-hover:scale-110 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQi0sxZWe3Ca0VsQ70ddKMjWNdxmSqS1B1I8JHBQjJ-ZfHXZEg-JrasyLuYabQvlwjBhekYxuEBUARLFJrjdVn_0MIQC4PRJfJ3siBGB2mZg19tX2E2t2SJ7mQE7mp39ISfeJ-zF8I62xWad4h01XG88klmkpue3y_KtLyU4Wfma3-GHXh3G7k7irRNv1hafg-0FJKh4i1nTBy5y34MKPNbJPmT3HUZzCz8BZpsdcYgIlG5IHTaI_LLV6tcdSJ7Vgh98Epwmms0w"/>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="text-xl font-bold text-white mb-2">Bentley Continental GT</h3>
+<span class="text-primary font-bold mb-4 block">$285,000</span>
+<button class="mt-auto w-full py-3 bg-white/5 hover:bg-primary hover:text-black rounded font-bold transition-all text-sm">Thêm vào giỏ</button>
+</div>
+</div>
+<div class="group bg-card-dark rounded-xl overflow-hidden border border-white/5 hover:border-primary/50 transition-all flex flex-col">
+<div class="relative aspect-[16/10] overflow-hidden">
+<img alt="Lamborghini" class="w-full h-full object-cover group-hover:scale-110 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhHfv7DdxXneiM22NbYLDzcccF4iiZG13dGtiC56oBujvIfliUO33a40AIO35N5UA_IypzEfW-RtcuwK3Te7A4Oz3cu58pU6Qnqnd9eMSc9nM3VyzlqglqfcAanco8jYgl9bn2StyZ3iDVFl9NqBp6dMVce0bDkCO_IQoE0RymB1Ih7pLiJBVgDi7WJ8AlSGt85j32SV92HN4kExj-ODjc63CTvxda_0GasTFGuh0vt4-dp4HfFSIPw_HNoUL5z770rWTlPu-peg"/>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="text-xl font-bold text-white mb-2">Lamborghini Aventador</h3>
+<span class="text-primary font-bold mb-4 block">$500,000</span>
+<button class="mt-auto w-full py-3 bg-white/5 hover:bg-primary hover:text-black rounded font-bold transition-all text-sm">Thêm vào giỏ</button>
+</div>
+</div>
+<div class="group bg-card-dark rounded-xl overflow-hidden border border-white/5 hover:border-primary/50 transition-all flex flex-col">
+<div class="relative aspect-[16/10] overflow-hidden">
+<img alt="Ferrari" class="w-full h-full object-cover group-hover:scale-110 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLpMX-ubOghtG-60MsVyfU_1t44niycTlaUrkUgNSzHIBXpAchOcVYEmEx36vEGIoPZWkMs0yrZbmrdMv2Xp3-8tEIVZ4pEibX0QxtnVBaz4pyRC1L5LYRKskID4dRJvMXHzypv-lRdHlMNB80Q_ju-9beOtNaoN7sLXuOvIxCovvlZgncPEDpJmpCCm3q4HM_kWzIfGW3dwa1R3-ENbLm9kp1cClvApyA-2nFYeUDTHwWZrK1TTomhZ2XXOudpd9HtxTA3DZefg"/>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="text-xl font-bold text-white mb-2">Ferrari F8 Tributo</h3>
+<span class="text-primary font-bold mb-4 block">$280,000</span>
+<button class="mt-auto w-full py-3 bg-white/5 hover:bg-primary hover:text-black rounded font-bold transition-all text-sm">Thêm vào giỏ</button>
+</div>
+</div>
+</div>
+</section>
+<footer class="bg-slate-50 dark:bg-[#080808] border-t border-slate-200 dark:border-white/5 pt-20 pb-10 px-6 mt-12">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
+<div class="col-span-1 lg:col-span-1">
+<div class="flex items-center gap-2 mb-8 group cursor-pointer">
+<span class="material-symbols-outlined text-primary text-3xl">directions_car</span>
+<span class="text-2xl font-bold tracking-tighter uppercase dark:text-white">Autoluxury</span>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-8">
+                    Định nghĩa lại các tiêu chuẩn bán lẻ ô tô hạng sang. Từ dịch vụ giao xe tận nơi đến hậu cần toàn cầu, chúng tôi mang đến trải nghiệm sở hữu vô song.
+                </p>
+</div>
+<div>
+<h4 class="text-xs font-black uppercase tracking-[0.2em] mb-8 dark:text-white">Khám phá</h4>
+<ul class="space-y-4 text-sm font-medium text-slate-500 dark:text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">Phòng trưng bày</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Xe đã qua sử dụng</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Tài chính</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Dịch vụ</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xs font-black uppercase tracking-[0.2em] mb-8 dark:text-white">Liên hệ</h4>
+<ul class="space-y-4 text-sm text-slate-500 dark:text-slate-400">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-lg">place</span>
+                        Số 1, Đại Lộ Thăng Long, Hà Nội
+                    </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-lg">phone</span>
+                        +84 (0) 90 123 4567
+                    </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-lg">mail</span>
+                        contact@autoluxury.com
+                    </li>
+</ul>
+</div>
+<div class="flex flex-col items-start lg:items-end">
+<h4 class="text-xs font-black uppercase tracking-[0.2em] mb-8 dark:text-white">Theo dõi</h4>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-slate-200 dark:border-white/10 flex items-center justify-center hover:bg-primary hover:text-black transition-all" href="#">
+<svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg>
+</a>
+<a class="w-10 h-10 rounded-full border border-slate-200 dark:border-white/10 flex items-center justify-center hover:bg-primary hover:text-black transition-all" href="#">
+<svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+<a class="w-10 h-10 rounded-full border border-slate-200 dark:border-white/10 flex items-center justify-center hover:bg-primary hover:text-black transition-all" href="#">
+<svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.84 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+<div class="flex flex-col md:flex-row items-center justify-between gap-6 border-t border-slate-200 dark:border-white/5 pt-10">
+<p class="text-xs text-slate-500 dark:text-slate-400">© 2024 AutoLuxury. Bảo lưu mọi quyền.</p>
+<div class="flex gap-8 text-xs text-slate-500 dark:text-slate-400">
+<a class="hover:text-primary transition-colors" href="#">Chính sách bảo mật</a>
+<a class="hover:text-primary transition-colors" href="#">Điều khoản dịch vụ</a>
+<a class="hover:text-primary transition-colors" href="#">Cookies</a>
+</div>
+</div>
+</div>
+</footer>
+<a class="fixed bottom-8 right-8 w-14 h-14 bg-primary rounded-full flex flex-col items-center justify-center text-black shadow-2xl z-50 hover:scale-110 transition-transform no-underline" href="#">
+<span class="material-symbols-outlined leading-none">expand_less</span>
+<span class="text-[9px] font-bold uppercase">Lên đầu trang</span>
+</a>
+<div class="fixed bottom-8 left-8 w-14 h-14 bg-white/10 backdrop-blur-md border border-white/20 rounded-full flex items-center justify-center text-white shadow-2xl z-50 hover:scale-110 transition-transform cursor-pointer">
+<span class="material-symbols-outlined">forum</span>
+</div>
+
+</body></html>

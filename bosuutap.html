@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html class="dark" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Danh Mục Sản Phẩm AutoLuxury</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#d4af37",
+                "background-dark": "#0a0a0a",
+                "card-dark": "#141414",
+              },
+              fontFamily: {
+                "display": ["Manrope", "sans-serif"]
+              },
+              borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer base {
+            body {
+                @apply font-display bg-background-dark text-white antialiased;
+            }
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .gold-outline {
+            border: 1px solid #d4af37;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-background-dark">
+<div class="relative flex min-h-screen flex-col overflow-x-hidden">
+<header class="sticky top-0 z-50 w-full border-b border-white/5 bg-background-dark/95 backdrop-blur-md">
+<div class="mx-auto max-w-[1400px] px-6 lg:px-10">
+<div class="flex h-20 items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl">directions_car</span>
+<h2 class="text-xl font-extrabold tracking-[0.2em] text-white uppercase">AutoLuxury</h2>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors" href="#">Trang Chủ</a>
+<a class="text-xs font-bold uppercase tracking-widest text-primary transition-colors" href="#">Bộ Sưu Tập</a>
+<a class="text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors" href="#">Dịch Vụ</a>
+<a class="text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors" href="#">Liên Hệ</a>
+</nav>
+<div class="flex items-center gap-6">
+<div class="hidden sm:flex items-center gap-4">
+<button class="text-xs font-bold uppercase tracking-widest text-white hover:text-primary transition-colors">Đăng Nhập</button>
+<button class="bg-primary px-6 py-2.5 text-background-dark text-xs font-black uppercase tracking-widest hover:bg-white transition-all">Đăng Ký</button>
+</div>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<section class="relative h-[50vh] w-full overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center bg-fixed" data-alt="Dark luxury car showroom background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuACZwW30oJmaRK9aDbJjQnohOyVVKYPz0pqnD8dzMPuyisifjepeJr5tyC149H3SImZ00OhQ0jp3NJrJs1xi-PI-qVz_k2ybsj_U21IdT-HQ21OnyIvqssBvWC7CNR1I6N0GRdfj7fnC-hyNqoO0by0qWlSacc4vMVs1bnfUQfC-Xl8ZXhP3iYWL0t9x56hlgLqDPDcWZOZCIck7VBefImPVZwW3yFGIT8fLY2hK2TAaxsqU1lXq3F3Wz9jKk0U3STBKBZ8KxHafROS");'>
+<div class="absolute inset-0 bg-black/60"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-black/40"></div>
+</div>
+<div class="relative mx-auto flex h-full max-w-[1400px] flex-col justify-center px-6 lg:px-10">
+<div class="max-w-3xl space-y-4">
+<div class="flex items-center gap-4">
+<span class="h-px w-12 bg-primary"></span>
+<span class="text-primary text-xs font-bold uppercase tracking-[0.3em]">Excellence in Motion</span>
+</div>
+<h1 class="text-5xl font-black leading-tight tracking-tight text-white md:text-7xl uppercase">
+                        BỘ SƯU TẬP <br/> <span class="text-primary">XE SANG</span>
+</h1>
+</div>
+</div>
+</section>
+<div class="mx-auto max-w-[1400px] px-6 lg:px-10 py-20">
+<div class="flex flex-col lg:flex-row gap-12">
+<aside class="w-full lg:w-72 shrink-0 space-y-10">
+<div>
+<h4 class="text-sm font-bold uppercase tracking-widest text-primary mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-lg">filter_list</span> Bộ lọc
+                        </h4>
+<div class="space-y-4 mb-8">
+<p class="text-xs font-bold uppercase tracking-widest text-slate-400">Thương hiệu</p>
+<div class="space-y-2">
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="form-checkbox bg-transparent border-white/20 text-primary focus:ring-primary focus:ring-offset-0 rounded-none" type="checkbox"/>
+<span class="text-sm text-slate-300 group-hover:text-white transition-colors">Mercedes-Maybach</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="form-checkbox bg-transparent border-white/20 text-primary focus:ring-primary focus:ring-offset-0 rounded-none" type="checkbox"/>
+<span class="text-sm text-slate-300 group-hover:text-white transition-colors">Rolls-Royce</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="form-checkbox bg-transparent border-white/20 text-primary focus:ring-primary focus:ring-offset-0 rounded-none" type="checkbox"/>
+<span class="text-sm text-slate-300 group-hover:text-white transition-colors">Bentley</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="form-checkbox bg-transparent border-white/20 text-primary focus:ring-primary focus:ring-offset-0 rounded-none" type="checkbox"/>
+<span class="text-sm text-slate-300 group-hover:text-white transition-colors">Lamborghini</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="form-checkbox bg-transparent border-white/20 text-primary focus:ring-primary focus:ring-offset-0 rounded-none" type="checkbox"/>
+<span class="text-sm text-slate-300 group-hover:text-white transition-colors">Porsche</span>
+</label>
+</div>
+</div>
+<div class="space-y-4 mb-8">
+<p class="text-xs font-bold uppercase tracking-widest text-slate-400">Khoảng giá</p>
+<div class="space-y-2">
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="form-radio bg-transparent border-white/20 text-primary focus:ring-primary focus:ring-offset-0" name="price" type="radio"/>
+<span class="text-sm text-slate-300 group-hover:text-white transition-colors">Dưới $200,000</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="form-radio bg-transparent border-white/20 text-primary focus:ring-primary focus:ring-offset-0" name="price" type="radio"/>
+<span class="text-sm text-slate-300 group-hover:text-white transition-colors">$200,000 - $500,000</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="form-radio bg-transparent border-white/20 text-primary focus:ring-primary focus:ring-offset-0" name="price" type="radio"/>
+<span class="text-sm text-slate-300 group-hover:text-white transition-colors">Trên $500,000</span>
+</label>
+</div>
+</div>
+<div class="space-y-4">
+<p class="text-xs font-bold uppercase tracking-widest text-slate-400">Kiểu dáng</p>
+<div class="space-y-2">
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="form-checkbox bg-transparent border-white/20 text-primary focus:ring-primary focus:ring-offset-0 rounded-none" type="checkbox"/>
+<span class="text-sm text-slate-300 group-hover:text-white transition-colors">Sedan</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="form-checkbox bg-transparent border-white/20 text-primary focus:ring-primary focus:ring-offset-0 rounded-none" type="checkbox"/>
+<span class="text-sm text-slate-300 group-hover:text-white transition-colors">Coupe / Sport</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="form-checkbox bg-transparent border-white/20 text-primary focus:ring-primary focus:ring-offset-0 rounded-none" type="checkbox"/>
+<span class="text-sm text-slate-300 group-hover:text-white transition-colors">SUV Luxury</span>
+</label>
+</div>
+</div>
+</div>
+</aside>
+<div class="flex-1">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12">
+<div class="group flex flex-col bg-card-dark border border-white/5 overflow-hidden transition-all hover:border-primary/40">
+<div class="aspect-[16/10] overflow-hidden relative">
+<div class="h-full w-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Rolls-Royce Phantom" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCeWwjBl8CD00tNPMpeLqBKoWnZhgrmTL1HEJ6rFrcdsIj-gEkvkUjT0yxKZFOJkO-kAWC8jlADcF1PgGFDc6wD8zI35O3zOs65otX62hLsPUERoiJQ1ebKe-LNBfuVc79zANJ4PjmZ1i0HrG4YLD7ePqAQqmq0_3BIr_wSl0K0ONsUK0O2aWcHR6NOttCGKIBxw2hs3GuOHHy4tGjLqFz98CmZB_AxnxvTXsdfOy5LqDLpXzXztSLWqyBIpy-n44x_lnprwoCkuB0J");'></div>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
+</div>
+<div class="p-8 flex flex-1 flex-col">
+<div class="flex items-start justify-between mb-4">
+<div>
+<h3 class="text-xl font-bold tracking-tight text-white mb-1">Rolls-Royce Phantom</h3>
+<p class="text-primary text-sm font-bold">Từ $450,000</p>
+</div>
+<span class="text-[10px] font-bold uppercase tracking-widest border border-primary/30 px-2 py-1 text-primary">Có sẵn</span>
+</div>
+<p class="mb-8 text-sm text-slate-400 font-light leading-relaxed">Đỉnh cao của sự sang trọng và tĩnh lặng. Một không gian riêng tư hoàn hảo được chế tác thủ công từ những vật liệu quý hiếm nhất.</p>
+<div class="mt-auto grid grid-cols-2 gap-4">
+<button class="gold-outline py-3 text-[10px] font-bold uppercase tracking-widest text-primary hover:bg-primary hover:text-background-dark transition-all">Xem Chi Tiết</button>
+<button class="bg-primary py-3 text-[10px] font-bold uppercase tracking-widest text-background-dark hover:bg-white transition-all">Nhận Báo Giá</button>
+</div>
+</div>
+</div>
+<div class="group flex flex-col bg-card-dark border border-white/5 overflow-hidden transition-all hover:border-primary/40">
+<div class="aspect-[16/10] overflow-hidden relative">
+<div class="h-full w-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Bentley Continental GT" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAUniQu2Tj59EX3y3BfJ9c9_t7PaaKzBMt9AUi5IUDrN7PixVIYupPiQ6jq4NRRXmjZjWl-vQd6Enp0FNM4E5ck6_kf81t2_iLQ_cv_3aWJVTl0hdJJ31i9VAyLopz7WzNGNNerOH9QN-gbNWDM-ssYYJiQzhoZi8VObLQCrfRG-5msyfmTL_07npbdF6_1P6tL4pLHzDXvoyB1RM1IxZxXXixxLCucE3ETYLg61qwnSP2yzcx25QTGNgRm4J8FiRe22T5CQMyEQv9E");'></div>
+</div>
+<div class="p-8 flex flex-1 flex-col">
+<div class="flex items-start justify-between mb-4">
+<div>
+<h3 class="text-xl font-bold tracking-tight text-white mb-1">Bentley Continental GT</h3>
+<p class="text-primary text-sm font-bold">Từ $285,000</p>
+</div>
+<span class="text-[10px] font-bold uppercase tracking-widest border border-primary/30 px-2 py-1 text-primary">Hàng Hiệu</span>
+</div>
+<p class="mb-8 text-sm text-slate-400 font-light leading-relaxed">Sự kết hợp hoàn hảo giữa sức mạnh thể thao và sự tinh tế lịch lãm của quý tộc Anh Quốc.</p>
+<div class="mt-auto grid grid-cols-2 gap-4">
+<button class="gold-outline py-3 text-[10px] font-bold uppercase tracking-widest text-primary hover:bg-primary hover:text-background-dark transition-all">Xem Chi Tiết</button>
+<button class="bg-primary py-3 text-[10px] font-bold uppercase tracking-widest text-background-dark hover:bg-white transition-all">Nhận Báo Giá</button>
+</div>
+</div>
+</div>
+<div class="group flex flex-col bg-card-dark border border-white/5 overflow-hidden transition-all hover:border-primary/40">
+<div class="aspect-[16/10] overflow-hidden relative">
+<div class="h-full w-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Lamborghini Aventador" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBPmK_qrecV-oI_tuvknajEP6GVcsD8xDwh55590AwUdJsNXuB-I4oqLBsJtphQUrVkdickJhGvdKsTl6t5gOV5CLQMaXdz-qI5fMZv0SklLh4VgUCj2UToDv1YiPRpFzBXaKvQnKiQZggPOQUgcn940D8stQEdyeyWpJJxghMuwCqnwLsIfMTtS3Xhd1WAwy-HJPQ8EOnbissuDkXftus9nc4WCy5oWKy0r56LWVllYSlSBPc-JuS3ALeMLI6t6B4OV0ut_SEKEXXF");'></div>
+</div>
+<div class="p-8 flex flex-1 flex-col">
+<div class="flex items-start justify-between mb-4">
+<div>
+<h3 class="text-xl font-bold tracking-tight text-white mb-1">Lamborghini Aventador</h3>
+<p class="text-primary text-sm font-bold">Từ $500,000</p>
+</div>
+<span class="text-[10px] font-bold uppercase tracking-widest border border-white/10 px-2 py-1 text-slate-500">Đặt trước</span>
+</div>
+<p class="mb-8 text-sm text-slate-400 font-light leading-relaxed">Kiệt tác cơ khí của Ý với hiệu suất phi thường và thiết kế vượt thời gian, định nghĩa lại khái niệm siêu xe.</p>
+<div class="mt-auto grid grid-cols-2 gap-4">
+<button class="gold-outline py-3 text-[10px] font-bold uppercase tracking-widest text-primary hover:bg-primary hover:text-background-dark transition-all">Xem Chi Tiết</button>
+<button class="bg-primary py-3 text-[10px] font-bold uppercase tracking-widest text-background-dark hover:bg-white transition-all">Nhận Báo Giá</button>
+</div>
+</div>
+</div>
+<div class="group flex flex-col bg-card-dark border border-white/5 overflow-hidden transition-all hover:border-primary/40">
+<div class="aspect-[16/10] overflow-hidden relative">
+<div class="h-full w-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Ferrari F8 Tributo" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBqx6Q8GkzmDXDhu3ru7UXXVoh6yfgXLrGICKQc5lG-syke-g98FfzJ6xzoe2s8WOgBQAy7jEPqJD2iAngqvT0SaG_Nq58Zp_6VQsV-Pvg-Xyh9gEOn5b8c8oGBWN2dKZNqBKfTBbcPVE10iqkvUC9KBUbZQCd92y8zjo8aZfy_6gV5tQ4BKmpcTszLorK2bDG7dShl8yww9ha6Jk8FuCF5sgXc7LCbdhD6AKGSfUVlMt69jG1ZvigQXiqolRp0ahr0WNrtYpwG4hIZ");'></div>
+</div>
+<div class="p-8 flex flex-1 flex-col">
+<div class="flex items-start justify-between mb-4">
+<div>
+<h3 class="text-xl font-bold tracking-tight text-white mb-1">Ferrari F8 Tributo</h3>
+<p class="text-primary text-sm font-bold">Từ $280,000</p>
+</div>
+<span class="text-[10px] font-bold uppercase tracking-widest border border-primary/30 px-2 py-1 text-primary">Phổ Biến</span>
+</div>
+<p class="mb-8 text-sm text-slate-400 font-light leading-relaxed">Sự vinh danh dành cho động cơ V8 mạnh mẽ nhất trong lịch sử Ferrari, kết hợp cùng khí động học vượt trội.</p>
+<div class="mt-auto grid grid-cols-2 gap-4">
+<button class="gold-outline py-3 text-[10px] font-bold uppercase tracking-widest text-primary hover:bg-primary hover:text-background-dark transition-all">Xem Chi Tiết</button>
+<button class="bg-primary py-3 text-[10px] font-bold uppercase tracking-widest text-background-dark hover:bg-white transition-all">Nhận Báo Giá</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section class="mx-auto max-w-[1400px] px-6 lg:px-10 pb-24">
+<div class="relative overflow-hidden bg-card-dark p-12 md:p-16 border border-white/5">
+<div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-12">
+<div class="max-w-2xl text-center md:text-left">
+<h3 class="text-3xl font-bold text-white md:text-4xl uppercase tracking-tight">Sẵn sàng lái thử?</h3>
+<p class="mt-4 text-slate-400 text-lg font-light leading-relaxed">Đội ngũ chuyên gia của chúng tôi luôn sẵn sàng hỗ trợ quý khách lựa chọn chiếc xe ưng ý nhất và trải nghiệm lái thực tế.</p>
+</div>
+<div class="flex shrink-0">
+<button class="bg-primary px-10 py-5 text-xs font-black uppercase tracking-widest text-background-dark hover:bg-white transition-all flex items-center gap-3">
+<span class="material-symbols-outlined text-base">chat_bubble</span> Liên hệ tư vấn
+                        </button>
+</div>
+</div>
+<div class="absolute -right-32 -bottom-32 h-96 w-96 rounded-full bg-primary/5 blur-[120px]"></div>
+<div class="absolute -left-32 -top-32 h-96 w-96 rounded-full bg-white/5 blur-[120px]"></div>
+</div>
+</section>
+</main>
+<footer class="border-t border-white/5 bg-background-dark py-20">
+<div class="mx-auto max-w-[1400px] px-6 lg:px-10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-16 mb-20">
+<div class="col-span-1 md:col-span-2 space-y-8">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl">directions_car</span>
+<h2 class="text-xl font-extrabold tracking-[0.2em] text-white uppercase">AutoLuxury</h2>
+</div>
+<p class="text-slate-400 max-w-sm font-light text-sm leading-relaxed">
+                        Thiết lập tiêu chuẩn vàng trong ngành phân phối ô tô hạng sang tại Việt Nam. Chúng tôi cam kết mang đến hành trình sở hữu xe đẳng cấp và độc bản.
+                    </p>
+</div>
+<div>
+<h4 class="font-bold mb-8 uppercase tracking-[0.2em] text-[10px] text-primary">Khám Phá</h4>
+<ul class="space-y-4 text-xs font-bold uppercase tracking-widest text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">Phòng Trưng Bày</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Dịch Vụ Cá Nhân Hóa</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Hỗ Trợ Tài Chính</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Bảo Dưỡng Chính Hãng</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-8 uppercase tracking-[0.2em] text-[10px] text-primary">Liên Hệ</h4>
+<ul class="space-y-4 text-sm text-slate-400 font-light">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-lg">location_on</span>
+<span>Khu đô thị cao cấp, Quận 1, TP. Hồ Chí Minh</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-lg">call</span>
+<span>1900 888 999</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-lg">mail</span>
+<span>contact@autoluxury.com.vn</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-white/5 pt-10 flex flex-col md:flex-row items-center justify-between gap-6 text-[10px] font-bold uppercase tracking-widest text-slate-600">
+<p>© 2024 AutoLuxury. Bảo lưu mọi quyền.</p>
+<div class="flex gap-10">
+<a class="hover:text-white transition-colors" href="#">Chính Sách Bảo Mật</a>
+<a class="hover:text-white transition-colors" href="#">Điều Khoản Dịch Vụ</a>
+<a class="hover:text-white transition-colors" href="#">Cookies</a>
+</div>
+</div>
+</div>
+</footer>
+<div class="fixed bottom-8 right-8 z-[60] flex flex-col items-end gap-4 group">
+<div class="invisible group-hover:visible mb-2 translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+<div class="bg-white text-background-dark p-4 rounded-xl rounded-br-none shadow-2xl text-xs font-black uppercase tracking-widest flex items-center gap-3">
+                Cần hỗ trợ ngay?
+            </div>
+</div>
+<button class="h-16 w-16 bg-primary text-background-dark shadow-2xl shadow-primary/20 flex items-center justify-center hover:scale-105 active:scale-95 transition-all">
+<span class="material-symbols-outlined text-2xl font-bold">forum</span>
+</button>
+</div>
+<button class="fixed bottom-8 left-8 z-[60] h-12 w-12 bg-white/5 border border-white/10 text-white backdrop-blur-md flex items-center justify-center hover:bg-primary hover:text-background-dark hover:border-primary transition-all shadow-xl" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+<span class="material-symbols-outlined">keyboard_double_arrow_up</span>
+</button>
+</div>
+
+</body></html>
