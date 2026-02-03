@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html class="dark" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Trang Dịch Vụ - AutoLuxury</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#d4af37",
+                "background-dark": "#0a0a0a",
+                "card-dark": "#141414",
+              },
+              fontFamily: {
+                "display": ["Manrope", "sans-serif"]
+              },
+              borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer base {
+            body {
+                @apply bg-background-dark text-white font-display;
+            }
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-header {
+            background: rgba(10, 10, 10, 0.85);
+            backdrop-filter: blur(12px);
+        }
+        .hero-blur {
+            filter: blur(8px) brightness(0.4);
+        }
+        .step-line::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            width: 100%;
+            height: 1px;
+            background: theme('colors.primary / 0.3');
+            z-index: 0;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+<div class="relative flex min-h-screen flex-col">
+<header class="sticky top-0 z-50 w-full border-b border-white/5 glass-header">
+<div class="mx-auto max-w-[1280px] px-6 lg:px-10">
+<div class="flex h-20 items-center justify-between">
+<div class="flex items-center gap-3">
+	<img src="image.png" width="75" height="65">
+<span class="material-symbols-outlined text-primary text-3xl">directions_car</span>
+<h2 class="text-xl font-bold tracking-[0.2em] text-white uppercase">QUYENMINH</h2>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors" href="index.html">Trang Chủ</a>
+<a class="text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors" href="index (2).html">Giới Thiệu</a>
+<a class="text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors" href="index (3).html">Sản Phẩm</a>
+<a class="text-xs font-bold uppercase tracking-widest text-primary" href="index (5).html">Dịch Vụ</a>
+<a class="text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors" href="index (4).html">Liên Hệ</a>
+</nav>
+<div class="flex items-center gap-6">
+<a href="index (7).html"><button class="text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors">Đăng Nhập</button></a>
+<button class="bg-primary px-6 py-2.5 text-xs font-bold uppercase tracking-widest text-background-dark hover:bg-white transition-all"><a href="index (6).html">Đăng Ký</a></button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<section class="relative h-[60vh] w-full overflow-hidden flex items-center justify-center">
+<div class="absolute inset-0 hero-blur bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCeWwjBl8CD00tNPMpeLqBKoWnZhgrmTL1HEJ6rFrcdsIj-gEkvkUjT0yxKZFOJkO-kAWC8jlADcF1PgGFDc6wD8zI35O3zOs65otX62hLsPUERoiJQ1ebKe-LNBfuVc79zANJ4PjmZ1i0HrG4YLD7ePqAQqmq0_3BIr_wSl0K0ONsUK0O2aWcHR6NOttCGKIBxw2hs3GuOHHy4tGjLqFz98CmZB_AxnxvTXsdfOy5LqDLpXzXztSLWqyBIpy-n44x_lnprwoCkuB0J");'></div>
+<div class="absolute inset-0 bg-gradient-to-b from-background-dark/50 via-transparent to-background-dark"></div>
+<div class="relative text-center space-y-4 px-6">
+<p class="text-primary text-xs font-bold uppercase tracking-[0.4em]">Tiêu chuẩn tối thượng</p>
+<h1 class="text-5xl md:text-7xl font-light tracking-tight text-white uppercase">Dịch Vụ <span class="italic font-normal">Đặc Quyền</span></h1>
+<div class="w-24 h-px bg-primary mx-auto mt-8"></div>
+</div>
+</section>
+<section class="mx-auto max-w-[1280px] px-6 lg:px-10 -mt-20 relative z-10 pb-32">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="group bg-card-dark border border-white/5 p-8 flex flex-col h-full transition-all hover:border-primary/50">
+<div class="mb-8">
+<span class="material-symbols-outlined text-4xl text-primary mb-4 block">handyman</span>
+<h3 class="text-xl font-bold mb-4 uppercase tracking-wide">Bảo Dưỡng Chuyên Sâu</h3>
+<p class="text-slate-400 text-sm leading-relaxed font-light">Quy trình kiểm tra 120 điểm kỹ thuật bởi đội ngũ chuyên gia được đào tạo chính hãng.</p>
+</div>
+<a class="mt-auto flex items-center gap-2 text-primary text-xs font-bold uppercase tracking-widest group-hover:gap-4 transition-all" href="#">
+                        Tìm hiểu thêm <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="group bg-card-dark border border-white/5 p-8 flex flex-col h-full transition-all hover:border-primary/50">
+<div class="mb-8">
+<span class="material-symbols-outlined text-4xl text-primary mb-4 block">brush</span>
+<h3 class="text-xl font-bold mb-4 uppercase tracking-wide">Tùy Chỉnh Cá Nhân</h3>
+<p class="text-slate-400 text-sm leading-relaxed font-light">Hiện thực hóa bản sắc cá nhân thông qua các gói độ nội ngoại thất Bespoke độc bản.</p>
+</div>
+<a class="mt-auto flex items-center gap-2 text-primary text-xs font-bold uppercase tracking-widest group-hover:gap-4 transition-all" href="#">
+                        Tìm hiểu thêm <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="group bg-card-dark border border-white/5 p-8 flex flex-col h-full transition-all hover:border-primary/50">
+<div class="mb-8">
+<span class="material-symbols-outlined text-4xl text-primary mb-4 block">shield_with_heart</span>
+<h3 class="text-xl font-bold mb-4 uppercase tracking-wide">Tài Chính &amp; Bảo Hiểm</h3>
+<p class="text-slate-400 text-sm leading-relaxed font-light">Giải pháp tài chính linh hoạt và các gói bảo hiểm cao cấp dành riêng cho dòng xe sang.</p>
+</div>
+<a class="mt-auto flex items-center gap-2 text-primary text-xs font-bold uppercase tracking-widest group-hover:gap-4 transition-all" href="#">
+                        Tìm hiểu thêm <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="group bg-card-dark border border-white/5 p-8 flex flex-col h-full transition-all hover:border-primary/50">
+<div class="mb-8">
+<span class="material-symbols-outlined text-4xl text-primary mb-4 block">precision_manufacturing</span>
+<h3 class="text-xl font-bold mb-4 uppercase tracking-wide">Cứu Hộ 24/7</h3>
+<p class="text-slate-400 text-sm leading-relaxed font-light">Dịch vụ hỗ trợ khẩn cấp chuyên nghiệp trên toàn quốc, đảm bảo hành trình không gián đoạn.</p>
+</div>
+<a class="mt-auto flex items-center gap-2 text-primary text-xs font-bold uppercase tracking-widest group-hover:gap-4 transition-all" href="#">
+                        Tìm hiểu thêm <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<section class="bg-card-dark py-32 border-y border-white/5">
+<div class="mx-auto max-w-[1280px] px-6 lg:px-10">
+<div class="text-center mb-20">
+<h2 class="text-3xl font-light uppercase tracking-[0.2em] mb-4">Quy Trình Chuyên Nghiệp</h2>
+<p class="text-slate-400 max-w-2xl mx-auto font-light">Sự tỉ mỉ trong từng chi tiết là cam kết của chúng tôi đối với mỗi chiếc xe.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 relative">
+<div class="relative z-10 text-center">
+<div class="w-12 h-12 rounded-full border border-primary bg-background-dark flex items-center justify-center mx-auto mb-6 text-primary font-bold">01</div>
+<h4 class="font-bold mb-3 uppercase tracking-wider text-sm">Tiếp Nhận</h4>
+<p class="text-slate-400 text-xs font-light">Kiểm tra tổng quát và tư vấn dịch vụ chi tiết.</p>
+</div>
+<div class="relative z-10 text-center">
+<div class="w-12 h-12 rounded-full border border-primary bg-background-dark flex items-center justify-center mx-auto mb-6 text-primary font-bold">02</div>
+<h4 class="font-bold mb-3 uppercase tracking-wider text-sm">Chẩn Đoán</h4>
+<p class="text-slate-400 text-xs font-light">Sử dụng thiết bị chuyên dụng hiện đại nhất.</p>
+</div>
+<div class="relative z-10 text-center">
+<div class="w-12 h-12 rounded-full border border-primary bg-background-dark flex items-center justify-center mx-auto mb-6 text-primary font-bold">03</div>
+<h4 class="font-bold mb-3 uppercase tracking-wider text-sm">Thực Hiện</h4>
+<p class="text-slate-400 text-xs font-light">Đội ngũ kỹ thuật viên tay nghề cao xử lý tỉ mỉ.</p>
+</div>
+<div class="relative z-10 text-center">
+<div class="w-12 h-12 rounded-full border border-primary bg-background-dark flex items-center justify-center mx-auto mb-6 text-primary font-bold">04</div>
+<h4 class="font-bold mb-3 uppercase tracking-wider text-sm">Bàn Giao</h4>
+<p class="text-slate-400 text-xs font-light">Kiểm tra cuối cùng và bàn giao xe tận nơi.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="mx-auto max-w-[1280px] px-6 lg:px-10 py-32">
+<div class="bg-gradient-to-r from-background-dark to-card-dark border border-primary/20 p-12 text-center relative overflow-hidden">
+<div class="relative z-10">
+<h3 class="text-3xl font-light mb-6 uppercase tracking-widest">Đặt lịch hẹn ngay hôm nay</h3>
+<p class="text-slate-400 mb-10 max-w-xl mx-auto font-light text-lg">Trải nghiệm dịch vụ chăm sóc xe hàng đầu thế giới ngay tại Việt Nam.</p>
+<button class="bg-primary px-10 py-4 text-xs font-bold uppercase tracking-[0.2em] text-background-dark hover:bg-white transition-all shadow-xl shadow-primary/10">Liên hệ tư vấn viên</button>
+</div>
+<div class="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-primary/5 blur-3xl"></div>
+</div>
+</section>
+</main>
+<footer class="border-t border-white/5 bg-background-dark py-20">
+<div class="mx-auto max-w-[1280px] px-6 lg:px-10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-16 mb-20">
+<div class="col-span-1 md:col-span-2 space-y-8">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl">directions_car</span>
+<h2 class="text-xl font-bold tracking-[0.2em] text-white uppercase">AutoLuxury</h2>
+</div>
+<p class="text-slate-500 max-w-md font-light leading-relaxed">
+                        Định nghĩa lại các tiêu chuẩn của bán lẻ ô tô hạng sang. Từ giao hàng tận nơi đến hậu cần toàn cầu, chúng tôi cung cấp một trải nghiệm sở hữu xe vô song.
+                    </p>
+</div>
+<div>
+<h4 class="font-bold mb-8 uppercase tracking-[0.2em] text-[10px] text-primary">Khám Phá</h4>
+<ul class="space-y-4 text-xs font-medium text-slate-400 uppercase tracking-widest">
+<li><a class="hover:text-primary transition-colors" href="#">Phòng Trưng Bày</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Xe Đã Qua Sử Dụng</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Tài Chính</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Dịch Vụ</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-8 uppercase tracking-[0.2em] text-[10px] text-primary">Liên Hệ</h4>
+<ul class="space-y-4 text-xs text-slate-400 font-light">
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm">location_on</span> Quận 7, TP. Hồ Chí Minh, Việt Nam</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">call</span> +84 (0) 28 1234 5678</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-sm">mail</span> contact@autoluxury.vn</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-white/5 pt-10 flex flex-col md:flex-row items-center justify-between gap-6 text-[10px] text-slate-600 font-bold uppercase tracking-[0.2em]">
+<p>© 2024 AutoLuxury. Bảo lưu mọi quyền.</p>
+<div class="flex gap-10">
+<a class="hover:text-white transition-colors" href="#">Bảo Mật</a>
+<a class="hover:text-white transition-colors" href="#">Điều Khoản</a>
+<a class="hover:text-white transition-colors" href="#">Cookies</a>
+</div>
+</div>
+</div>
+</footer>
+<div class="fixed bottom-8 right-8 z-[60] flex flex-col items-end gap-4 group">
+<div class="invisible group-hover:visible mb-2 translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+<div class="bg-white text-background-dark px-4 py-3 rounded-lg rounded-br-none shadow-2xl text-[10px] font-bold uppercase tracking-widest whitespace-nowrap">
+                Hỗ trợ trực tuyến 24/7
+            </div>
+</div>
+<button class="h-16 w-16 rounded-full bg-primary text-background-dark shadow-2xl shadow-primary/20 flex items-center justify-center hover:scale-110 active:scale-95 transition-all">
+<span class="material-symbols-outlined font-bold text-3xl">chat_bubble</span>
+</button>
+</div>
+<button class="fixed bottom-8 left-8 z-[60] h-12 w-12 border border-white/10 text-white backdrop-blur-md flex items-center justify-center hover:bg-primary hover:text-background-dark hover:border-primary transition-all shadow-xl" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+<span class="material-symbols-outlined text-xl">keyboard_arrow_up</span>
+</button>
+</div>
+
+</body></html>
